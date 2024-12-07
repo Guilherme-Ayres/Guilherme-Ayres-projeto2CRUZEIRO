@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;  
+    background: linear-gradient(45deg, #ffb84d, #32cd32);  
+    background-attachment: fixed;  
+    background-size: cover;  
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.titulo, .linha-horizontal, .textoo, .imagem1 img {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s; 
+}
+
+.titulo {
+    font-family: "future-light";
+    text-align: center;
+    margin: 0px;
+    font-size:140%;
+    color: #000000;
+}
+
+.linha-horizontal {
+    width: calc(100% - 75px);
+    max-width: none;
+    margin-bottom: 44px;
+    border: 1px solid #000;
+}
+
+.imagem1 {
+    text-align: center;
+}
+
+.imagem1 img {
+    border: 2px solid #000; 
+}
+
+.imagem1 img {
+    width: 40%; 
+    height: auto;
+    border: 2px solid #000; 
+}
+
+.textoo {
+    width: 50%;  
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 450px;
+    padding: 15px; 
+    background-color: #ffb84d;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+    color: #000000;
+}
+
+ul {
+    padding-left: 20px;  
+}
+
+ul li {
+    list-style-type: disc;  
+    margin-bottom: 10px;  
+    line-height: 1.5;  
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: #000; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    color: #ffffff; 
+    transform: scale(1.1); 
+}
